@@ -1,0 +1,58 @@
+{
+  "name": "yagangdv-vue",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Yagangdv Vue3 Component Library",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./dist/*": {
+      "types": [
+        "./dist/*.d.ts",
+        "./dist/*/index.d.ts"
+      ],
+      "import": [
+        "./dist/*.js",
+        "./dist/*/index.js"
+      ],
+      "default": [
+        "./dist/*.js",
+        "./dist/*/index.js"
+      ]
+    },
+    "./global.d.ts": "./global.d.ts",
+    "./global": "./global.d.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "README.md",
+    "dist",
+    "global.d.ts",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "run-s build:esm build:vite:parallel",
+    "build:esm": "tsdown",
+    "build:vite:parallel": "run-p build:umd build:full-esm",
+    "build:full-esm": "vite build --config ./vite.esm.config.ts",
+    "build:umd": "vite build",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "npm-run-all": "^4.1.5",
+    "tsdown": "^0.20.1",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  }
+}
