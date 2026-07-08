@@ -1,24 +1,16 @@
 {
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
+    "paths": {},
+    "types": ["vite/client"],
+    /* Linting */
     "strict": true,
-    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    "erasableSyntaxOnly": true,
+    "noUncheckedSideEffectImports": true
   },
-  "files": [
-    "./vue.d.ts"
-  ],
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
-  ]
+  "files": ["./vue.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

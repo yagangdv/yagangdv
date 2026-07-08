@@ -2,12 +2,14 @@
   "name": "yagangdv-vue-workspace",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "scripts": {
     "build": "pnpm --filter yagangdv-vue build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.27.0"
+  "packageManager": "pnpm@11.10.0",
+  "devDependencies": {
+    "tsdown": "^0.22.4"
+  }
 }
