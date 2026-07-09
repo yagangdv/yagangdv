@@ -1,15 +1,35 @@
 {
-  "name": "yagangdv-vue-workspace",
+  "name": "yagangdv-workspace",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "packageManager": "pnpm@11.10.0",
+  "description": "Yagang Design Vue3 Component Library",
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "email": "chenyagang333@qq.com",
+    "name": "chenyagang333"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyagang333/yagangdv.git"
+  },
   "scripts": {
     "build": "pnpm --filter yagangdv-vue build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@11.10.0",
   "devDependencies": {
-    "tsdown": "^0.22.4"
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vitejs/plugin-vue-jsx": "^5.1.6",
+    "@vue/tsconfig": "^0.9.1",
+    "tsdown": "^0.22.4",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3",
+    "vite-plugin-dayjs": "^1.0.2",
+    "vite-plugin-inspect": "^11.4.1",
+    "vite-plugin-tsx-resolve-types": "^1.0.1",
+    "vue-tsc": "^3.3.7"
+  },
+  "dependencies": {
+    "vue": "^3.5.39"
   }
 }

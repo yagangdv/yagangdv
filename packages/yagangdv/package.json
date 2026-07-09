@@ -1,16 +1,108 @@
 {
-  "name": "yagangdv-vue",
+  "name": "yagangdv",
   "type": "module",
   "version": "1.0.0",
+  "packageManager": "pnpm@11.10.0",
   "description": "Yagang Design Vue3 Component Library",
   "keywords": [],
+  "license": "MIT",
   "author": {
     "email": "chenyagang333@qq.com",
     "name": "chenyagang333"
   },
-  "license": "ISC",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyagang333/yagangdv.git",
+    "directory": "packages/yagangdv"
+  },
+  "sideEffects": [
+    "./dist/reset.css",
+    "./dist/yagangd.css",
+    "./dist/yagangd-with-locales.js",
+    "./dist/yagangd-with-locales.esm.js",
+    "./dist/yagangd.esm.js",
+    "./dist/yagangd.js"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./dist/*": {
+      "types": [
+        "./dist/*.d.ts",
+        "./dist/*/index.d.ts"
+      ],
+      "import": [
+        "./dist/*.js",
+        "./dist/*/index.js"
+      ],
+      "default": [
+        "./dist/*.js",
+        "./dist/*/index.js"
+      ]
+    },
+    "./dist/locale/*": {
+      "types": "./dist/locale/*.d.ts",
+      "import": "./dist/locale/*.js",
+      "default": "./dist/locale/*.js"
+    },
+    "./locale/*": {
+      "types": "./dist/locale/*.d.ts",
+      "import": "./dist/locale/*.js",
+      "default": "./dist/locale/*.js"
+    },
+    "./global.d.ts": "./global.d.ts",
+    "./global": "./global.d.ts",
+    "./dist/reset.css": "./dist/reset.css",
+    "./dist/yagangd.css": "./dist/yagangd.css",
+    "./dist/yagangd-with-locales.js": "./dist/yagangd-with-locales.js",
+    "./dist/yagangd-with-locales.esm.js": "./dist/yagangd-with-locales.esm.js",
+    "./dist/yagangd.esm.js": "./dist/yagangd.esm.js",
+    "./dist/yagangd.js": "./dist/yagangd.js",
+    "./web-types.json": "./web-types.json",
+    "./web-tags.json": "./web-tags.json",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "unpkg": "dist/yagangd.js",
+  "jsdelivr": "dist/yagangd.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist",
+    "global.d.ts",
+    "package.json",
+    "web-tags.json",
+    "web-types.json"
+  ],
+  "contributes": {
+    "html": {
+      "customData": [
+        "./web-tags.json"
+      ]
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@vueuse/core": "^14.3.0",
+    "dayjs": "^1.11.21",
+    "es-toolkit": "^1.49.0",
+    "scroll-into-view-if-needed": "^3.1.0",
+    "throttle-debounce": "^5.0.2"
+  },
+  "web-types": "web-types.json",
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/throttle-debounce": "^5.0.2",
+    "csstype": "^3.2.3"
   }
 }
