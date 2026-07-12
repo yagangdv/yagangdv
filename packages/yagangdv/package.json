@@ -86,6 +86,8 @@
     }
   },
   "scripts": {
+    "build": "run-s build:esm",
+    "build:esm": "tsdown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

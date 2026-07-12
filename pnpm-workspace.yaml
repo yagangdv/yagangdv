@@ -3,6 +3,6 @@ packages:
   - playground
   - docs
 allowBuilds:
-  esbuild: set this to true or false
+  esbuild: true
 minimumReleaseAgeExclude:
   - tsdown@0.22.4
