@@ -1,4 +1,4 @@
-import type { App, SlotsType } from "vue";
+import type { SlotsType } from "vue";
 import { defineComponent } from "vue";
 
 export interface ButtonEmitsProps {
@@ -29,7 +29,7 @@ const Button = defineComponent<
   string,
   SlotsType<ButtonSlots>
 >(
-  (props = defaultButtonProps, { attrs, slots, emit }) => {
+  (props = defaultButtonProps, { slots }) => {
     return () => {
       return <div>{slots.default?.()}</div>;
     };

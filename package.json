@@ -19,19 +19,19 @@
     "build:yagangdv": "pnpm -F yagangdv build"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.7",
-    "@vitejs/plugin-vue-jsx": "^5.1.6",
-    "@vue/tsconfig": "^0.9.1",
-    "npm-run-all": "^4.1.5",
-    "tsdown": "^0.22.4",
-    "tsx": "^4.23.0",
-    "typescript": "^6.0.3",
-    "vite-plugin-dayjs": "^1.0.2",
-    "vite-plugin-inspect": "^11.4.1",
-    "vite-plugin-tsx-resolve-types": "^1.0.1",
-    "vue-tsc": "^3.3.7"
+    "@vitejs/plugin-vue": "catalog:dev",
+    "@vitejs/plugin-vue-jsx": "catalog:dev",
+    "@vue/tsconfig": "catalog:dev",
+    "npm-run-all": "catalog:dev",
+    "tsdown": "catalog:dev",
+    "tsx": "catalog:dev",
+    "typescript": "catalog:dev",
+    "vite-plugin-dayjs": "catalog:dev",
+    "vite-plugin-inspect": "catalog:dev",
+    "vite-plugin-tsx-resolve-types": "catalog:dev",
+    "vue-tsc": "catalog:dev"
   },
   "dependencies": {
-    "vue": "^3.5.39"
+    "vue": "catalog:prod"
   }
 }
