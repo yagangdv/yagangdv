@@ -4,25 +4,41 @@
   "version": "1.0.0",
   "packageManager": "pnpm@11.11.0",
   "description": "Yagang Design Vue3 Component Library",
-  "keywords": [],
-  "license": "MIT",
   "author": {
     "email": "chenyagang333@qq.com",
     "name": "chenyagang333"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenyagang333/yagangdv.git"
   },
+  "keywords": [],
   "scripts": {
+    "dev": "turbo dev --filter docs",
+    "dev:play": "pnpm -F playground dev",
+    "lint": "eslint . --fix",
+    "lint:fix": "eslint --fix",
     "build": "run-s build:yagangdv",
-    "build:yagangdv": "pnpm -F yagangdv build"
+    "build:yagangdv": "pnpm -F yagangdv build",
+    "prepare": "simple-git-hooks",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "vue": "catalog:prod"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "catalog:dev",
     "@vitejs/plugin-vue": "catalog:dev",
     "@vitejs/plugin-vue-jsx": "catalog:dev",
     "@vue/tsconfig": "catalog:dev",
-    "npm-run-all": "catalog:dev",
+    "eslint": "catalog:dev",
+    "eslint-plugin-format": "catalog:dev",
+    "jiti": "catalog:dev",
+    "lint-staged": "catalog:dev",
+    "npm-run-all2": "catalog:dev",
+    "picocolors": "catalog:dev",
+    "simple-git-hooks": "catalog:dev",
     "tsdown": "catalog:dev",
     "tsx": "catalog:dev",
     "typescript": "catalog:dev",
@@ -31,7 +47,13 @@
     "vite-plugin-tsx-resolve-types": "catalog:dev",
     "vue-tsc": "catalog:dev"
   },
-  "dependencies": {
-    "vue": "catalog:prod"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged",
+    "commit-msg": "node scripts/verify-commit.js"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,json}": [
+      "pnpm run lint:fix"
+    ]
   }
 }

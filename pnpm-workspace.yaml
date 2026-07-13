@@ -1,14 +1,16 @@
+allowBuilds:
+  esbuild: true
+  simple-git-hooks: true
+minimumReleaseAgeExclude:
+  - tsdown@0.22.4
+
 packages:
   - packages/*
   - playground
   - docs
-allowBuilds:
-  esbuild: true
-minimumReleaseAgeExclude:
-  - tsdown@0.22.4
-
 catalogs:
   dev:
+    '@antfu/eslint-config': ^9.1.0
     '@tsconfig/node24': ^24.0.4
     '@types/node': ^24.13.2
     '@types/throttle-debounce': ^5.0.2
@@ -16,8 +18,13 @@ catalogs:
     '@vitejs/plugin-vue-jsx': ^5.1.6
     '@vue/tsconfig': ^0.9.1
     csstype: ^3.2.3
-    npm-run-all: ^4.1.5
+    eslint: ^10.7.0
+    eslint-plugin-format: ^2.0.1
+    picocolors: ^1.1.1
+    jiti: ^2.7.0
+    lint-staged: ^17.0.8
     npm-run-all2: ^9.0.2
+    simple-git-hooks: ^2.13.1
     tsdown: ^0.22.4
     tsx: ^4.23.0
     typescript: ^6.0.3
@@ -26,6 +33,7 @@ catalogs:
     vite-plugin-inspect: ^11.4.1
     vite-plugin-tsx-resolve-types: ^1.0.1
     vite-plugin-vue-devtools: ^8.1.2
+    vitepress: 2.0.0-alpha.18
     vue-tsc: ^3.3.7
   prod:
     '@vueuse/core': ^14.3.0

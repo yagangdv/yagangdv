@@ -4,17 +4,17 @@
   "version": "1.0.0",
   "packageManager": "pnpm@11.10.0",
   "description": "Yagang Design Vue3 Component Library",
-  "keywords": [],
-  "license": "MIT",
   "author": {
     "email": "chenyagang333@qq.com",
     "name": "chenyagang333"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenyagang333/yagangdv.git",
     "directory": "packages/yagangdv"
   },
+  "keywords": [],
   "sideEffects": [
     "./dist/reset.css",
     "./dist/yagangd.css",

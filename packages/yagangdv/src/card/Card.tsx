@@ -1,27 +1,24 @@
-import type { SlotsType } from "vue";
-import { defineComponent } from "vue";
+import type { SlotsType } from 'vue'
+import { defineComponent } from 'vue'
 
 export interface CardEmitsProps {
-  onClick?: CardEmits["click"];
+  onClick?: CardEmits['click']
 }
 
 export interface CardProps {
-  href?: string;
-  target?: "_self" | "_blank" | "_parent" | "_top" | string;
-  autoInsertSpace?: boolean;
+  href?: string
+  target?: '_self' | '_blank' | '_parent' | '_top' | string
+  autoInsertSpace?: boolean
 }
 
 export type CardEmits = {
-  click: (e: MouseEvent) => void;
-};
-
-export interface CardSlots {
-  default?: () => any;
-  icon?: () => any;
-  loadingIcon?: () => any;
+  click: (e: MouseEvent) => void
 }
-
-const defaultCardProps = {} as any;
+export interface CardSlots {
+  default?: () => any
+  icon?: () => any
+  loadingIcon?: () => any
+}
 
 const Card = defineComponent<
   CardProps,
@@ -29,15 +26,15 @@ const Card = defineComponent<
   string,
   SlotsType<CardSlots>
 >(
-  (props = defaultCardProps, { attrs, slots, emit }) => {
+  (_, { slots }) => {
     return () => {
-      return <div>{slots.default?.()}</div>;
-    };
+      return <div>{slots.default?.()}</div>
+    }
   },
   {
-    name: "YagangCard",
+    name: 'YagangCard',
     inheritAttrs: false,
   },
-);
+)
 
-export default Card;
+export default Card

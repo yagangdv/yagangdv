@@ -1,8 +1,11 @@
 {
   "name": "playground",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
+  "engines": {
+    "node": "^22.18.0 || >=24.12.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -23,8 +26,5 @@
     "vite": "catalog:dev",
     "vite-plugin-vue-devtools": "catalog:dev",
     "vue-tsc": "catalog:dev"
-  },
-  "engines": {
-    "node": "^22.18.0 || >=24.12.0"
   }
 }
