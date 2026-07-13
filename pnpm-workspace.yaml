@@ -17,13 +17,15 @@ catalogs:
     '@vitejs/plugin-vue': ^6.0.7
     '@vitejs/plugin-vue-jsx': ^5.1.6
     '@vue/tsconfig': ^0.9.1
+    "@changesets/cli": "^2.31.0"
+    cross-env: ^10.1.0
     csstype: ^3.2.3
     eslint: ^10.7.0
     eslint-plugin-format: ^2.0.1
-    picocolors: ^1.1.1
     jiti: ^2.7.0
     lint-staged: ^17.0.8
     npm-run-all2: ^9.0.2
+    picocolors: ^1.1.1
     simple-git-hooks: ^2.13.1
     tsdown: ^0.22.4
     tsx: ^4.23.0
@@ -34,6 +36,7 @@ catalogs:
     vite-plugin-tsx-resolve-types: ^1.0.1
     vite-plugin-vue-devtools: ^8.1.2
     vitepress: 2.0.0-alpha.18
+    "turbo": "^2.10.4"
     vue-tsc: ^3.3.7
   prod:
     '@vueuse/core': ^14.3.0

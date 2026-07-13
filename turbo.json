@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build:esm": {
+      "dependsOn": ["^build:esm"],
+      "inputs": ["src/**", "package.json", "tsconfig.json", "tsdown.config.ts"],
+      "outputs": ["dist/**"]
+    },
+    "docs:build": {
+      "dependsOn": ["yagangdv#build:esm", "^build"],
+      "inputs": ["src/**", "package.json", "tsconfig.json"],
+      "outputs": [".vitepress/dist/**"]
+    },
+    "docs:dev": {
+      "dependsOn": ["yagangdv#build:esm", "^build"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
