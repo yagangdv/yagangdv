@@ -8,6 +8,9 @@ Thank you!
 
 [中文版模板 / Chinese template](./PULL_REQUEST_TEMPLATE_CN.md)
 
+**中文版模板 / Chinese template：**  
+[点击使用中文 PR 模板](?template=pull_request_template_zh_cn.md)
+
 ### 🤔 This is a ...
 
 - [ ] 🆕 New feature
