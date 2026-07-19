@@ -29,7 +29,7 @@ const Button = defineComponent<
 >(
   (_, { slots }) => {
     return () => {
-      return <div>{slots.default?.()}</div>
+      return <div class="yagang-button-333">{slots.default?.()}</div>
     }
   },
   {
