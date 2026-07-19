@@ -8,6 +8,14 @@ packages:
   - packages/*
   - playground
   - docs
+
+overrides: 
+  vite: catalog:dev
+
+catalog:
+  '@vitest/coverage-v8': ^4.1.10
+  '@vitest/ui': ^4.1.10
+  
 catalogs:
   dev:
     '@antfu/eslint-config': ^9.1.0
@@ -36,7 +44,8 @@ catalogs:
     vite-plugin-tsx-resolve-types: ^1.0.1
     vite-plugin-vue-devtools: ^8.1.2
     vitepress: 2.0.0-alpha.18
-    "turbo": "^2.10.4"
+    turbo: ^2.10.4
+    vitest: ^4.1.10
     vue-tsc: ^3.3.7
   prod:
     '@vueuse/core': ^14.3.0

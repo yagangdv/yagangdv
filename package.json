@@ -26,6 +26,9 @@
     "build": "run-s build:site",
     "build:site": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo docs:build --filter docs",
     "build:yagangdv": "pnpm -F yagangdv build",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm"
   },
@@ -37,6 +40,8 @@
     "@changesets/cli": "catalog:dev",
     "@vitejs/plugin-vue": "catalog:dev",
     "@vitejs/plugin-vue-jsx": "catalog:dev",
+    "@vitest/coverage-v8": "catalog:",
+    "@vitest/ui": "catalog:",
     "@vue/tsconfig": "catalog:dev",
     "cross-env": "catalog:dev",
     "eslint": "catalog:dev",
@@ -50,9 +55,11 @@
     "tsx": "catalog:dev",
     "turbo": "catalog:dev",
     "typescript": "catalog:dev",
+    "vite": "catalog:dev",
     "vite-plugin-dayjs": "catalog:dev",
     "vite-plugin-inspect": "catalog:dev",
     "vite-plugin-tsx-resolve-types": "catalog:dev",
+    "vitest": "catalog:dev",
     "vue-tsc": "catalog:dev"
   },
   "simple-git-hooks": {
