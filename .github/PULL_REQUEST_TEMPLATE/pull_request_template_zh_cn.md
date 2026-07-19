@@ -6,7 +6,7 @@ Pull Request 会在至少一位协作者审核通过后合并。
 谢谢！
 -->
 
-[English template / 英文模板](./PULL_REQUEST_TEMPLATE.md)
+[English template / 英文模板](../pull_request_template.md)
 
 ### 🤔 本次变更属于 ...
 

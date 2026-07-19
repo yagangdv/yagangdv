@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenyagang333/yagangdv.git"
+    "url": "git+https://github.com/yagangdv/yagangdv.git"
   },
   "keywords": [],
   "scripts": {
@@ -21,6 +21,7 @@
     "ci:lint": "eslint",
     "lint": "eslint . --fix",
     "lint:fix": "eslint --fix",
+    "changeset": "pnpm changeset",
     "bump": "pnpm changeset version",
     "build": "run-s build:site",
     "build:site": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo docs:build --filter docs",
