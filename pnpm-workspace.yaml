@@ -26,6 +26,7 @@ catalogs:
     '@vitejs/plugin-vue-jsx': ^5.1.6
     '@vue/tsconfig': ^0.9.1
     "@changesets/cli": "^2.31.0"
+    "@vue/test-utils": ^2.4.11
     cross-env: ^10.1.0
     csstype: ^3.2.3
     eslint: ^10.7.0
