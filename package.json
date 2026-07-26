@@ -38,6 +38,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@changesets/cli": "catalog:dev",
+    "@types/jsdom": "catalog:dev",
     "@vitejs/plugin-vue": "catalog:dev",
     "@vitejs/plugin-vue-jsx": "catalog:dev",
     "@vitest/coverage-v8": "catalog:",
@@ -48,6 +49,7 @@
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "jiti": "catalog:dev",
+    "jsdom": "catalog:dev",
     "lint-staged": "catalog:dev",
     "npm-run-all2": "catalog:dev",
     "picocolors": "catalog:dev",
