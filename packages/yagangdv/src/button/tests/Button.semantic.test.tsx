@@ -11,7 +11,7 @@ describe('button.Semantic', () => {
       },
     })
 
-    // expect(wrapper.find('.yagang-btn').exists()).toBe(true)
+    expect(wrapper.find('.yagang-btn').exists()).toBe(true)
     expect(wrapper.text()).toBe('Test')
   })
 })
