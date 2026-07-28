@@ -29,7 +29,7 @@
     "test": "vitest run",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "prepare": "simple-git-hooks",
+    "no-prepare": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
