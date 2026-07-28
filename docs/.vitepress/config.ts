@@ -3,7 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Yagang Design Vue',
-  description: 'Yagang Design Vue is a Vue 3 enterprise component library built on the Yagang Design design system.',
+  description:
+    'Yagang Design Vue is a Vue 3 enterprise component library built on the Yagang Design design system.',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -25,4 +26,5 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
   },
+  base: '/yagangdv/',
 })
