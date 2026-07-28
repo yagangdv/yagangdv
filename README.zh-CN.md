@@ -18,7 +18,7 @@
 [github-action-image]: https://github.com/antdv-next/antdv-next/actions/workflows/test.yml/badge.svg
 [github-action-url]: https://github.com/antdv-next/antdv-next/actions/workflows/test.yml
 [codecov-image]: https://img.shields.io/codecov/c/github/antdv-next/antdv-next?style=flat-square
-[codecov-url]: https://codecov.io/gh/antdv-next/antdv-next
+[codecov-url]: https://codecov.io/gh/yagangdv/yagangdv
 [npm-image]: https://img.shields.io/npm/v/antdv-next.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/antdv-next
 [download-image]: https://img.shields.io/npm/dm/antdv-next.svg?style=flat-square
