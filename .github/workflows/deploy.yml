@@ -5,6 +5,12 @@ on:
     workflows: [Test]
     types: [completed]
 
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
   group: deploy-site-main
   cancel-in-progress: true
